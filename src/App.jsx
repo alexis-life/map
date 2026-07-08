@@ -1,5 +1,5 @@
-import { useMemo, useState } from 'react'
-import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from 'react-leaflet'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import { MapContainer, TileLayer, Marker, Popup, useMap, useMapEvents } from 'react-leaflet'
 import L from 'leaflet'
 import places from './data/places.json'
 import './App.css'
@@ -28,6 +28,38 @@ function ClickCatcher({ onBackgroundClick }) {
       onBackgroundClick()
     },
   })
+  return null
+}
+
+// Exposes the underlying Leaflet map instance to the rest of the app via a ref,
+// since App itself renders outside the MapContainer's Leaflet context.
+function MapRefSetter({ mapRef }) {
+  const map = useMap()
+  useEffect(() => {
+    mapRef.current = map
+  }, [map, mapRef])
+  return null
+}
+
+// Smoothly pans/zooms to fit whichever locations belong to the active trip.
+function FlyToActiveTrip({ activeTrip, locations, mapRef }) {
+  useEffect(() => {
+    const map = mapRef.current
+    if (!map || !activeTrip) return
+    const matching = locations.filter((location) =>
+      location.visits.some((visit) => visit.trip === activeTrip)
+    )
+    if (matching.length === 0) return
+
+    if (matching.length === 1) {
+      const [{ lat, lng }] = matching
+      map.flyTo([lat, lng], Math.max(map.getZoom(), 6), { duration: 1 })
+    } else {
+      const bounds = L.latLngBounds(matching.map((location) => [location.lat, location.lng]))
+      map.flyToBounds(bounds, { padding: [60, 60], maxZoom: 9, duration: 1 })
+    }
+  }, [activeTrip, locations, mapRef])
+
   return null
 }
 
@@ -61,6 +93,7 @@ function groupByLocation(records) {
 function App() {
   const [activeTrip, setActiveTrip] = useState(null)
   const [menuOpen, setMenuOpen] = useState(false)
+  const mapRef = useRef(null)
 
   const handleTripClick = (trip) => {
     setActiveTrip((current) => (current === trip ? null : trip))
@@ -179,9 +212,25 @@ function App() {
       <MapContainer center={[20, 20]} zoom={2} className="map-container" scrollWheelZoom>
         <TileLayer url={TILE_URL} attribution={TILE_ATTRIBUTION} />
         <ClickCatcher onBackgroundClick={() => setActiveTrip(null)} />
+        <MapRefSetter mapRef={mapRef} />
+        <FlyToActiveTrip activeTrip={activeTrip} locations={locations} mapRef={mapRef} />
 
         {markers.map(({ location, icon }) => (
-          <Marker key={location.place_name} position={[location.lat, location.lng]} icon={icon}>
+          <Marker
+            key={location.place_name}
+            position={[location.lat, location.lng]}
+            icon={icon}
+            eventHandlers={{
+              click: () => {
+                const map = mapRef.current
+                if (map) {
+                  map.flyTo([location.lat, location.lng], Math.max(map.getZoom(), 6), {
+                    duration: 0.8,
+                  })
+                }
+              },
+            }}
+          >
             <Popup>
               <div className="popup">
                 <h3 className="popup-title">{location.place_name}</h3>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>404 · alexischao.com</title>
+<!--
+  ============================================================
+  alexischao.com — shared 404 page
+
+  Drop this file as 404.html at the PUBLIC ROOT of every
+  subdomain repo (GitHub Pages picks it up automatically).
+
+  Fully self-contained on purpose: a 404 page should never
+  depend on another request succeeding (theme.css load, etc).
+  The favicon reference below is same-origin (relative path),
+  not a request to a second host.
+  ============================================================
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --c1: #ffe0e9; --c2: #ffc2d4; --c3: #ff9ebb; --c5: #e05780;
+    --c6: #b9375e; --c7: #8a2846; --c9: #522e38;
+    --bg-page: #f9f4f5; --bg-surface: #fff;
+    --radius-lg: 10px; --radius-pill: 999px;
+    --shadow-card: 0 1px 6px rgba(82, 46, 56, 0.08);
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-page);
+    color: var(--c9);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .card {
+    background: var(--bg-surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    padding: 48px 40px;
+    text-align: center;
+    max-width: 420px;
+    width: 100%;
+  }
+  .mascot { width: 96px; height: 96px; margin: 0 auto 8px; object-fit: contain; animation: bob 3.2s ease-in-out infinite; }
+  @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+  @media (prefers-reduced-motion: reduce) { .mascot { animation: none; } }
+  .code {
+    font-size: 3.4rem;
+    font-weight: 700;
+    color: var(--c6);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+  .headline { font-size: 1rem; font-weight: 600; color: var(--c9); margin-top: 4px; }
+  .meta {
+    font-size: 0.78rem;
+    color: var(--c7);
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+  .meta code {
+    font-family: inherit;
+    background: var(--c1);
+    color: var(--c6);
+    padding: 1px 8px;
+    border-radius: var(--radius-pill);
+    font-weight: 600;
+  }
+  .actions { display: flex; gap: 10px; justify-content: center; margin-top: 26px; flex-wrap: wrap; }
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: 1px solid var(--c6);
+  }
+  .btn-primary { background: var(--c6); color: #fff; }
+  .btn-secondary { background: rgba(185, 55, 94, 0.08); color: var(--c6); }
+  .btn:focus-visible { outline: 3px solid var(--c3); outline-offset: 2px; }
+  @media (max-width: 420px) { .card { padding: 36px 22px; } .code { font-size: 2.6rem; } }
+</style>
+</head>
+<body>
+  <main class="card">
+    <img class="mascot" src="/avatar.png" alt="">
+    <div class="code">404</div>
+    <p class="headline">This page wandered off.</p>
+    <p class="meta">There's nothing at <code id="lost-path">this address</code>.<br>It may have moved, or the link had a typo.</p>
+    <nav class="actions" aria-label="Where to go instead">
+      <a class="btn btn-primary" href="/" id="site-home">Back to this site</a>
+      <a class="btn btn-secondary" href="https://alexischao.com">All sites</a>
+    </nav>
+  </main>
+  <script>
+    // Same file works on every subdomain: show where the visitor
+    // actually is, so the buttons make sense in context.
+    (function () {
+      var host = location.hostname || 'alexischao.com';
+      document.getElementById('lost-path').textContent =
+        host + (location.pathname !== '/' ? location.pathname : '');
+      var home = document.getElementById('site-home');
+      if (host === 'alexischao.com' || host === 'www.alexischao.com') {
+        home.textContent = 'Back home';
+      } else {
+        home.textContent = 'Back to ' + host.split('.')[0];
+      }
+    })();
+  </script>
+</body>
+</html>

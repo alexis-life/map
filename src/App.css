@@ -1,0 +1,162 @@
+.app {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg, #f9f4f5);
+}
+
+.app-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 0.85rem 1.25rem;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 10px rgba(82, 46, 56, 0.08);
+  pointer-events: none;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--c9, #522e38);
+}
+
+.app-subtitle {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--c6, #8a4a5c);
+}
+
+.map-container {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Custom marker pins */
+.pin {
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  transition: opacity 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.pin-visited {
+  background: var(--c5, #b9375e);
+  border: 2px solid #ffffff;
+  box-shadow: 0 1px 4px rgba(82, 46, 56, 0.35);
+}
+
+.pin-want {
+  background: var(--c1, #ffe0e9);
+  border: 2px solid var(--c3, #ffb3c6);
+  box-shadow: 0 1px 4px rgba(82, 46, 56, 0.2);
+}
+
+.pin-highlight {
+  box-shadow: 0 0 0 4px var(--c3, #ffb3c6), 0 1px 4px rgba(82, 46, 56, 0.35);
+  transform: scale(1.15);
+}
+
+.pin-dimmed {
+  opacity: 0.3;
+}
+
+.legend-swatch {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+/* Popup content */
+.popup {
+  font-family: 'Poppins', sans-serif;
+  min-width: 160px;
+}
+
+.popup-title {
+  margin: 0 0 0.35rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--c9, #522e38);
+}
+
+.popup-note {
+  margin: 0 0 0.35rem;
+  font-size: 0.82rem;
+  color: var(--c7, #6e3b47);
+}
+
+.popup-date {
+  margin: 0 0 0.4rem;
+  font-size: 0.75rem;
+  color: var(--c6, #8a4a5c);
+}
+
+.popup-trip {
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--c5, #b9375e);
+  background: var(--c1, #ffe0e9);
+  border: none;
+  border-radius: 10px;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+}
+
+.popup-trip:hover {
+  background: var(--c2, #ffc9d6);
+}
+
+/* Legend */
+.legend {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(82, 46, 56, 0.08);
+  padding: 0.6rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  color: var(--c9, #522e38);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .app-header h1 {
+    font-size: 0.9rem;
+  }
+  .app-subtitle {
+    display: none;
+  }
+  .legend {
+    bottom: 0.75rem;
+    left: 0.75rem;
+    padding: 0.5rem 0.7rem;
+    font-size: 0.72rem;
+  }
+}

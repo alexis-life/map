@@ -1,74 +1,74 @@
 [
   {
-    "trip": "Iberia Summer",
-    "place_name": "Lisbon, Portugal",
+    "trip": "iberia summer",
+    "place_name": "lisbon, portugal",
     "lat": 38.7223,
     "lng": -9.1393,
     "visited": true,
-    "note": "Pastel de nata every morning",
+    "note": "pastel de nata every morning",
     "date_visited": "2023-09-02"
   },
   {
-    "trip": "Iberia Summer",
-    "place_name": "Seville, Spain",
+    "trip": "iberia summer",
+    "place_name": "seville, spain",
     "lat": 37.3891,
     "lng": -5.9845,
     "visited": true,
-    "note": "Hottest week of my life, worth it",
+    "note": "hottest week of my life, worth it",
     "date_visited": "2023-09-06"
   },
   {
-    "trip": "Japan 2024",
-    "place_name": "Kyoto, Japan",
+    "trip": "japan 2024",
+    "place_name": "kyoto, japan",
     "lat": 35.0116,
     "lng": 135.7681,
     "visited": true,
-    "note": "Cherry blossom season",
+    "note": "cherry blossom season",
     "date_visited": "2024-04-10"
   },
   {
-    "trip": "Japan 2024",
-    "place_name": "Osaka, Japan",
+    "trip": "japan 2024",
+    "place_name": "osaka, japan",
     "lat": 34.6937,
     "lng": 135.5023,
     "visited": true,
-    "note": "Amazing street food",
+    "note": "amazing street food",
     "date_visited": "2024-04-12"
   },
   {
-    "trip": "Japan 2024",
-    "place_name": "Tokyo, Japan",
+    "trip": "japan 2024",
+    "place_name": "tokyo, japan",
     "lat": 35.6762,
     "lng": 139.6503,
     "visited": true,
-    "note": "Shibuya crossing at night was unreal",
+    "note": "shibuya crossing at night was unreal",
     "date_visited": "2024-04-15"
   },
   {
-    "trip": "Japan 2025",
-    "place_name": "Kyoto, Japan",
+    "trip": "japan 2025",
+    "place_name": "kyoto, japan",
     "lat": 35.0116,
     "lng": 135.7681,
     "visited": true,
-    "note": "Back for the autumn leaves this time",
+    "note": "back for the autumn leaves this time",
     "date_visited": "2025-11-08"
   },
   {
     "trip": null,
-    "place_name": "Reykjavik, Iceland",
+    "place_name": "reykjavik, iceland",
     "lat": 64.1466,
     "lng": -21.9426,
     "visited": false,
-    "note": "Want to see northern lights",
+    "note": "want to see northern lights",
     "date_visited": null
   },
   {
     "trip": null,
-    "place_name": "Queenstown, New Zealand",
+    "place_name": "queenstown, new zealand",
     "lat": -45.0312,
     "lng": 168.6626,
     "visited": false,
-    "note": "Bucket list hiking spot",
+    "note": "bucket list hiking spot",
     "date_visited": null
   }
 ]

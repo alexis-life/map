@@ -13,7 +13,7 @@ sharing a design system and a common data-pipeline pattern.
 
 ## Data pipeline
 
-Place data lives as a markdown table in my Obsidian vault (`Places.md`):
+Place data lives as a markdown table in my Obsidian vault, one file per trip (`atlas/cards/trips/`):
 
 ```
 | place_name | lat | lng | visited | note | date_visited | trip |
@@ -42,7 +42,7 @@ is that `src/data/places.json` is an array of objects shaped like:
 
 ### Adding a place
 
-1. Open `Places.md` in Obsidian.
+1. Open the relevant trip file in `atlas/cards/trips/` in Obsidian (or create a new one for a new trip).
 2. Add a new row to the table with at least `place_name`, `lat`, `lng`. Leave
    `visited` as `false`/empty until you've been, and fill in `note`,
    `date_visited`, `trip` whenever you like.

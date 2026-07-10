@@ -1,74 +1,546 @@
 [
   {
-    "trip": "iberia summer",
-    "place_name": "lisbon, portugal",
-    "lat": 38.7223,
-    "lng": -9.1393,
+    "place_name": "lincoln, new hampshire",
+    "lat": 44.0464,
+    "lng": -71.67,
+    "trip": "new england 2016",
     "visited": true,
-    "note": "pastel de nata every morning",
-    "date_visited": "2023-09-02"
+    "note": "white mountains hiking week",
+    "date_start": "2016-06-08",
+    "date_end": "2016-06-15",
+    "highlights": []
   },
   {
-    "trip": "iberia summer",
-    "place_name": "seville, spain",
-    "lat": 37.3891,
-    "lng": -5.9845,
+    "place_name": "toronto, canada",
+    "lat": 43.6532,
+    "lng": -79.3832,
+    "trip": "new england 2016",
     "visited": true,
-    "note": "hottest week of my life, worth it",
-    "date_visited": "2023-09-06"
+    "note": "quick stop on the way back",
+    "date_start": "2016-06-22",
+    "date_end": "2016-06-22",
+    "highlights": []
   },
   {
-    "trip": "japan 2024",
+    "place_name": "ashland, oregon",
+    "lat": 42.1946,
+    "lng": -122.7095,
+    "trip": "oregon 2017",
+    "visited": true,
+    "note": "two weeks - actually mostly yosemite and the pnw, not much time in ashland itself",
+    "date_start": "2017-07-02",
+    "date_end": "2017-07-15",
+    "highlights": [
+      {
+        "name": "Yosemite National Park",
+        "category": "sight",
+        "favorite": true,
+        "note": "most photographed stop of the whole trip"
+      },
+      {
+        "name": "Downtown Portland",
+        "category": "sight",
+        "favorite": false,
+        "note": "quick stop heading north"
+      },
+      {
+        "name": "Seattle waterfront",
+        "category": "sight",
+        "favorite": false,
+        "note": "second big cluster of photos on this trip"
+      }
+    ]
+  },
+  {
+    "place_name": "tokyo, japan",
+    "lat": 35.6693,
+    "lng": 139.705,
+    "trip": "japan 2018",
+    "visited": true,
+    "note": "mostly tokyo with a hong kong stopover - originally mislabeled kyushu",
+    "date_start": "2018-06-14",
+    "date_end": "2018-06-28",
+    "highlights": [
+      {
+        "name": "Shibuya Crossing",
+        "category": "sight",
+        "favorite": true,
+        "note": "dominant cluster - most photos of the whole trip here"
+      },
+      {
+        "name": "Asakusa / Senso-ji",
+        "category": "sight",
+        "favorite": true,
+        "note": "second big cluster near the temple"
+      },
+      {
+        "name": "Hong Kong (Kowloon)",
+        "category": "sight",
+        "favorite": false,
+        "note": "stopover on the way, two separate clusters here"
+      }
+    ]
+  },
+  {
+    "place_name": "seattle, washington",
+    "lat": 47.6062,
+    "lng": -122.3321,
+    "trip": "seattle 2019",
+    "visited": true,
+    "note": "long weekend in seattle",
+    "date_start": "2019-03-29",
+    "date_end": "2019-04-01",
+    "highlights": [
+      {
+        "name": "Pike Place Market",
+        "category": "sight",
+        "favorite": true,
+        "note": "biggest cluster of photos downtown"
+      },
+      {
+        "name": "University District / Green Lake",
+        "category": "sight",
+        "favorite": false,
+        "note": "second big cluster"
+      },
+      {
+        "name": "Alki Beach, West Seattle",
+        "category": "sight",
+        "favorite": false,
+        "note": "smaller cluster across the water"
+      }
+    ]
+  },
+  {
+    "place_name": "yokohama, japan",
+    "lat": 35.4641,
+    "lng": 139.6223,
+    "trip": "japan 2019",
+    "visited": true,
+    "note": "actually yokohama, not niigata - day trip south of tokyo",
+    "date_start": "2019-06-08",
+    "date_end": "2019-06-24",
+    "highlights": [
+      {
+        "name": "Minato Mirai",
+        "category": "sight",
+        "favorite": false,
+        "note": "waterfront area, most of the photos from this stop"
+      }
+    ]
+  },
+  {
     "place_name": "kyoto, japan",
-    "lat": 35.0116,
-    "lng": 135.7681,
+    "lat": 34.9671,
+    "lng": 135.7756,
+    "trip": "japan 2019",
     "visited": true,
-    "note": "cherry blossom season",
-    "date_visited": "2024-04-10"
+    "note": "actually kyoto, not osaka - the biggest photo cluster after tokyo on this trip",
+    "date_start": "2019-06-08",
+    "date_end": "2019-06-24",
+    "highlights": [
+      {
+        "name": "Higashiyama district",
+        "category": "sight",
+        "favorite": true,
+        "note": "two big clusters right around here"
+      },
+      {
+        "name": "Gion",
+        "category": "sight",
+        "favorite": false,
+        "note": "close by, second cluster"
+      }
+    ]
   },
   {
-    "trip": "japan 2024",
-    "place_name": "osaka, japan",
-    "lat": 34.6937,
-    "lng": 135.5023,
-    "visited": true,
-    "note": "amazing street food",
-    "date_visited": "2024-04-12"
-  },
-  {
-    "trip": "japan 2024",
     "place_name": "tokyo, japan",
     "lat": 35.6762,
     "lng": 139.6503,
+    "trip": "japan 2019",
     "visited": true,
-    "note": "shibuya crossing at night was unreal",
-    "date_visited": "2024-04-15"
+    "note": "big three-week japan trip",
+    "date_start": "2019-06-08",
+    "date_end": "2019-06-24",
+    "highlights": [
+      {
+        "name": "Shinjuku",
+        "category": "sight",
+        "favorite": true,
+        "note": "biggest cluster of tokyo photos on this trip"
+      },
+      {
+        "name": "Asakusa",
+        "category": "sight",
+        "favorite": true,
+        "note": "second big cluster near sensoji"
+      },
+      {
+        "name": "Tokyo Disney Resort",
+        "category": "sight",
+        "favorite": false,
+        "note": "day trip out to urayasu/chiba"
+      }
+    ]
   },
   {
-    "trip": "japan 2025",
-    "place_name": "kyoto, japan",
-    "lat": 35.0116,
-    "lng": 135.7681,
+    "place_name": "las vegas, nevada",
+    "lat": 36.1222,
+    "lng": -115.1702,
+    "trip": "las vegas 2020",
     "visited": true,
-    "note": "back for the autumn leaves this time",
-    "date_visited": "2025-11-08"
+    "note": "quick vegas trip",
+    "date_start": "2020-01-06",
+    "date_end": "2020-01-07",
+    "highlights": [
+      {
+        "name": "The Strip",
+        "category": "sight",
+        "favorite": true,
+        "note": "almost all the photos are right along here"
+      },
+      {
+        "name": "South Strip (near Mandalay Bay)",
+        "category": "sight",
+        "favorite": false,
+        "note": "second, smaller cluster"
+      }
+    ]
   },
   {
-    "trip": null,
-    "place_name": "reykjavik, iceland",
-    "lat": 64.1466,
-    "lng": -21.9426,
-    "visited": false,
-    "note": "want to see northern lights",
-    "date_visited": null
+    "place_name": "dallas, texas",
+    "lat": 32.9455,
+    "lng": -96.8176,
+    "trip": "dallas 2021",
+    "visited": true,
+    "note": "long weekend in dallas",
+    "date_start": "2021-06-26",
+    "date_end": "2021-06-28",
+    "highlights": []
   },
   {
-    "trip": null,
+    "place_name": "austin, texas",
+    "lat": 30.2423,
+    "lng": -97.7869,
+    "trip": "austin 2021",
+    "visited": true,
+    "note": "fourth of july in austin",
+    "date_start": "2021-07-04",
+    "date_end": "2021-07-09",
+    "highlights": []
+  },
+  {
+    "place_name": "las vegas, nevada",
+    "lat": 36.1057,
+    "lng": -115.1794,
+    "trip": "las vegas nye 2021",
+    "visited": true,
+    "note": "new year's eve trip",
+    "date_start": "2021-12-28",
+    "date_end": "2022-01-03",
+    "highlights": [
+      {
+        "name": "South Strip (Mandalay Bay/Luxor area)",
+        "category": "sight",
+        "favorite": true,
+        "note": "most photos from this stretch"
+      },
+      {
+        "name": "Mid-Strip",
+        "category": "sight",
+        "favorite": false,
+        "note": "second cluster"
+      }
+    ]
+  },
+  {
+    "place_name": "morro bay, california",
+    "lat": 35.2885,
+    "lng": -120.6604,
+    "trip": "central coast 2022",
+    "visited": true,
+    "note": "weekend on the central coast",
+    "date_start": "2022-04-22",
+    "date_end": "2022-04-24",
+    "highlights": []
+  },
+  {
+    "place_name": "los angeles, california",
+    "lat": 34.0413,
+    "lng": -118.2768,
+    "trip": "los angeles summer 2022",
+    "visited": true,
+    "note": "week in la",
+    "date_start": "2022-06-30",
+    "date_end": "2022-07-07",
+    "highlights": [
+      {
+        "name": "Downtown LA",
+        "category": "sight",
+        "favorite": true,
+        "note": "biggest cluster of the trip"
+      },
+      {
+        "name": "Koreatown",
+        "category": "food",
+        "favorite": false,
+        "note": "second cluster"
+      },
+      {
+        "name": "Pasadena/Arcadia",
+        "category": "sight",
+        "favorite": false,
+        "note": "day trip out this way"
+      }
+    ]
+  },
+  {
+    "place_name": "phoenix, arizona",
+    "lat": 33.4883,
+    "lng": -112.3589,
+    "trip": "lake havasu 2022",
+    "visited": true,
+    "note": "actually mostly phoenix, not lake havasu",
+    "date_start": "2022-07-17",
+    "date_end": "2022-07-20",
+    "highlights": [
+      {
+        "name": "Downtown Phoenix",
+        "category": "sight",
+        "favorite": true,
+        "note": "main cluster of the trip"
+      },
+      {
+        "name": "Mesa/Tempe",
+        "category": "sight",
+        "favorite": false,
+        "note": "second, smaller cluster"
+      }
+    ]
+  },
+  {
+    "place_name": "monterey, california",
+    "lat": 36.5549,
+    "lng": -121.9264,
+    "trip": "monterey 2023",
+    "visited": true,
+    "note": "weekend in monterey/carmel",
+    "date_start": "2023-06-24",
+    "date_end": "2023-06-25",
+    "highlights": [
+      {
+        "name": "Cannery Row",
+        "category": "sight",
+        "favorite": true,
+        "note": "biggest cluster of photos"
+      },
+      {
+        "name": "Marina/Sand City",
+        "category": "sight",
+        "favorite": false,
+        "note": "second cluster just up the coast"
+      }
+    ]
+  },
+  {
+    "place_name": "los angeles, california",
+    "lat": 34.0706,
+    "lng": -118.3865,
+    "trip": "los angeles 2023",
+    "visited": true,
+    "note": "summer trip to la",
+    "date_start": "2023-07-23",
+    "date_end": "2023-07-25",
+    "highlights": [
+      {
+        "name": "Downtown LA",
+        "category": "sight",
+        "favorite": true,
+        "note": "biggest cluster"
+      },
+      {
+        "name": "Santa Monica",
+        "category": "sight",
+        "favorite": true,
+        "note": "second cluster, right on the pier/beach"
+      },
+      {
+        "name": "Hollywood/Mid-Wilshire",
+        "category": "sight",
+        "favorite": false,
+        "note": "third cluster"
+      },
+      {
+        "name": "Studio City/Universal",
+        "category": "sight",
+        "favorite": false,
+        "note": "smaller cluster near universal"
+      }
+    ]
+  },
+  {
+    "place_name": "los angeles, california",
+    "lat": 34.0232,
+    "lng": -118.2812,
+    "trip": "los angeles spring 2024",
+    "visited": true,
+    "note": "day trip to la",
+    "date_start": "2024-04-18",
+    "date_end": "2024-04-18",
+    "highlights": [
+      {
+        "name": "Koreatown/Downtown border",
+        "category": "sight",
+        "favorite": false,
+        "note": "single tight cluster, all photos from this day"
+      }
+    ]
+  },
+  {
+    "place_name": "anaheim, california",
+    "lat": 33.8482,
+    "lng": -118.0109,
+    "trip": "anaheim 2024",
+    "visited": true,
+    "note": "five days near disneyland",
+    "date_start": "2024-08-27",
+    "date_end": "2024-08-31",
+    "highlights": [
+      {
+        "name": "Disneyland Resort",
+        "category": "sight",
+        "favorite": true,
+        "note": "main cluster, most of the trip's photos"
+      },
+      {
+        "name": "Fullerton/Placentia",
+        "category": "sight",
+        "favorite": false,
+        "note": "smaller clusters nearby"
+      }
+    ]
+  },
+  {
+    "place_name": "sierra nevada foothills, california",
+    "lat": 38.7494,
+    "lng": -120.6646,
+    "trip": "sierra nevada 2024",
+    "visited": true,
+    "note": "day trip to the sierra foothills",
+    "date_start": "2024-09-14",
+    "date_end": "2024-09-14",
+    "highlights": [
+      {
+        "name": "Silver Lake / Kirkwood area",
+        "category": "sight",
+        "favorite": true,
+        "note": "almost all the photos are from this one spot"
+      }
+    ]
+  },
+  {
+    "place_name": "las vegas, nevada",
+    "lat": 36.1296,
+    "lng": -115.1644,
+    "trip": "las vegas christmas 2024",
+    "visited": true,
+    "note": "christmas trip",
+    "date_start": "2024-12-23",
+    "date_end": "2024-12-26",
+    "highlights": [
+      {
+        "name": "The Strip",
+        "category": "sight",
+        "favorite": true,
+        "note": "bulk of the photos, this trip's main cluster"
+      },
+      {
+        "name": "Off-Strip (near the airport)",
+        "category": "sight",
+        "favorite": false,
+        "note": "second cluster"
+      }
+    ]
+  },
+  {
+    "place_name": "lake tahoe, california",
+    "lat": 38.8251,
+    "lng": -120.119,
+    "trip": "lake tahoe 2025",
+    "visited": true,
+    "note": "long weekend at tahoe",
+    "date_start": "2025-03-14",
+    "date_end": "2025-03-16",
+    "highlights": []
+  },
+  {
+    "place_name": "gilroy, california",
+    "lat": 37.0644,
+    "lng": -121.5427,
+    "trip": "gilroy 2025",
+    "visited": true,
+    "note": "weekend south of the bay",
+    "date_start": "2025-05-31",
+    "date_end": "2025-06-01",
+    "highlights": [
+      {
+        "name": "Gilroy Gardens / outlet area",
+        "category": "sight",
+        "favorite": true,
+        "note": "main cluster of photos"
+      }
+    ]
+  },
+  {
+    "place_name": "los angeles, california",
+    "lat": 34.1393,
+    "lng": -118.3562,
+    "trip": "santa clarita 2025",
+    "visited": true,
+    "note": "actually mostly los angeles, not santa clarita",
+    "date_start": "2025-08-10",
+    "date_end": "2025-08-13",
+    "highlights": [
+      {
+        "name": "Los Feliz/Griffith Park area",
+        "category": "sight",
+        "favorite": true,
+        "note": "biggest cluster"
+      },
+      {
+        "name": "Downtown LA",
+        "category": "sight",
+        "favorite": false,
+        "note": "second cluster"
+      },
+      {
+        "name": "West LA/Beverly Hills",
+        "category": "sight",
+        "favorite": false,
+        "note": "smaller cluster"
+      }
+    ]
+  },
+  {
     "place_name": "queenstown, new zealand",
     "lat": -45.0312,
     "lng": 168.6626,
+    "trip": null,
     "visited": false,
     "note": "bucket list hiking spot",
-    "date_visited": null
+    "date_start": null,
+    "date_end": null,
+    "highlights": []
+  },
+  {
+    "place_name": "reykjavik, iceland",
+    "lat": 64.1466,
+    "lng": -21.9426,
+    "trip": null,
+    "visited": false,
+    "note": "want to see northern lights",
+    "date_start": null,
+    "date_end": null,
+    "highlights": []
   }
 ]

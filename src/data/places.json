@@ -1,74 +1,74 @@
 [
   {
-    "place_name": "Kyoto, Japan",
-    "lat": 35.0116,
-    "lng": 135.7681,
-    "visited": true,
-    "note": "Cherry blossom season",
-    "date_visited": "2024-04-10",
-    "trip": "Japan 2024"
-  },
-  {
-    "place_name": "Osaka, Japan",
-    "lat": 34.6937,
-    "lng": 135.5023,
-    "visited": true,
-    "note": "Amazing street food",
-    "date_visited": "2024-04-12",
-    "trip": "Japan 2024"
-  },
-  {
-    "place_name": "Tokyo, Japan",
-    "lat": 35.6762,
-    "lng": 139.6503,
-    "visited": true,
-    "note": "Shibuya crossing at night was unreal",
-    "date_visited": "2024-04-15",
-    "trip": "Japan 2024"
-  },
-  {
-    "place_name": "Kyoto, Japan",
-    "lat": 35.0116,
-    "lng": 135.7681,
-    "visited": true,
-    "note": "Back for the autumn leaves this time",
-    "date_visited": "2025-11-08",
-    "trip": "Japan 2025"
-  },
-  {
-    "place_name": "Reykjavik, Iceland",
-    "lat": 64.1466,
-    "lng": -21.9426,
-    "visited": false,
-    "note": "Want to see northern lights",
-    "date_visited": null,
-    "trip": null
-  },
-  {
+    "trip": "Iberia Summer",
     "place_name": "Lisbon, Portugal",
     "lat": 38.7223,
     "lng": -9.1393,
     "visited": true,
     "note": "Pastel de nata every morning",
-    "date_visited": "2023-09-02",
-    "trip": "Iberia Summer"
+    "date_visited": "2023-09-02"
   },
   {
+    "trip": "Iberia Summer",
     "place_name": "Seville, Spain",
     "lat": 37.3891,
     "lng": -5.9845,
     "visited": true,
     "note": "Hottest week of my life, worth it",
-    "date_visited": "2023-09-06",
-    "trip": "Iberia Summer"
+    "date_visited": "2023-09-06"
   },
   {
+    "trip": "Japan 2024",
+    "place_name": "Kyoto, Japan",
+    "lat": 35.0116,
+    "lng": 135.7681,
+    "visited": true,
+    "note": "Cherry blossom season",
+    "date_visited": "2024-04-10"
+  },
+  {
+    "trip": "Japan 2024",
+    "place_name": "Osaka, Japan",
+    "lat": 34.6937,
+    "lng": 135.5023,
+    "visited": true,
+    "note": "Amazing street food",
+    "date_visited": "2024-04-12"
+  },
+  {
+    "trip": "Japan 2024",
+    "place_name": "Tokyo, Japan",
+    "lat": 35.6762,
+    "lng": 139.6503,
+    "visited": true,
+    "note": "Shibuya crossing at night was unreal",
+    "date_visited": "2024-04-15"
+  },
+  {
+    "trip": "Japan 2025",
+    "place_name": "Kyoto, Japan",
+    "lat": 35.0116,
+    "lng": 135.7681,
+    "visited": true,
+    "note": "Back for the autumn leaves this time",
+    "date_visited": "2025-11-08"
+  },
+  {
+    "trip": null,
+    "place_name": "Reykjavik, Iceland",
+    "lat": 64.1466,
+    "lng": -21.9426,
+    "visited": false,
+    "note": "Want to see northern lights",
+    "date_visited": null
+  },
+  {
+    "trip": null,
     "place_name": "Queenstown, New Zealand",
     "lat": -45.0312,
     "lng": 168.6626,
     "visited": false,
     "note": "Bucket list hiking spot",
-    "date_visited": null,
-    "trip": null
+    "date_visited": null
   }
 ]

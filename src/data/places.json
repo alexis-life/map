@@ -208,6 +208,30 @@
     ]
   },
   {
+    "place_name": "guerneville, california",
+    "lat": 38.3407,
+    "lng": -122.9946,
+    "trip": "sonoma 2020",
+    "visited": true,
+    "note": "day trip to the russian river",
+    "date_start": "2020-08-06",
+    "date_end": "2020-08-06",
+    "highlights": [
+      {
+        "name": "Russian River (Guerneville)",
+        "category": "sight",
+        "favorite": true,
+        "note": "main cluster"
+      },
+      {
+        "name": "Jenner / Sonoma Coast",
+        "category": "sight",
+        "favorite": false,
+        "note": "second cluster near the coast"
+      }
+    ]
+  },
+  {
     "place_name": "dallas, texas",
     "lat": 32.9455,
     "lng": -96.8176,
@@ -315,6 +339,30 @@
         "category": "sight",
         "favorite": false,
         "note": "second, smaller cluster"
+      }
+    ]
+  },
+  {
+    "place_name": "irvine, california",
+    "lat": 33.6885,
+    "lng": -117.8328,
+    "trip": "orange county 2023",
+    "visited": true,
+    "note": "day trip to orange county / inland empire",
+    "date_start": "2023-03-05",
+    "date_end": "2023-03-05",
+    "highlights": [
+      {
+        "name": "Irvine",
+        "category": "sight",
+        "favorite": true,
+        "note": "main cluster"
+      },
+      {
+        "name": "Ontario/Chino",
+        "category": "sight",
+        "favorite": false,
+        "note": "second cluster, likely a drive-through stop"
       }
     ]
   },
@@ -488,6 +536,30 @@
         "category": "sight",
         "favorite": true,
         "note": "main cluster of photos"
+      }
+    ]
+  },
+  {
+    "place_name": "marina del rey, california",
+    "lat": 34.0406,
+    "lng": -118.4925,
+    "trip": "marina del rey 2025",
+    "visited": true,
+    "note": "weekend near the marina",
+    "date_start": "2025-07-29",
+    "date_end": "2025-07-30",
+    "highlights": [
+      {
+        "name": "Marina del Rey",
+        "category": "sight",
+        "favorite": true,
+        "note": "main cluster"
+      },
+      {
+        "name": "El Segundo/Manhattan Beach",
+        "category": "sight",
+        "favorite": false,
+        "note": "second cluster nearby"
       }
     ]
   },
